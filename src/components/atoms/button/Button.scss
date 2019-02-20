@@ -1,0 +1,22 @@
+@import 'src/assets/css/variables.scss';
+
+.a-btn {
+  align-items: center;
+  background-color: $color-kermit-green-two;
+  border-radius: 4px;
+  color: $color-white;
+  display: flex;
+  font-family: NotoSansCJKjp;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-kermit-green;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

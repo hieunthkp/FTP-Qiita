@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import './components/atoms/button/Button.scss';
+import { Tag } from './components/atoms/tag/Tag';
 
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            <i className="fas fa-igloo"></i>Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
             className="App-link"
@@ -21,6 +22,9 @@ class App extends Component {
             Learn React
           </a>
           <div className="a-btn">Sample</div>
+          <Tag icon="priceTag">children</Tag>
+          <Tag icon="heart">children</Tag>
+          <Tag icon="textBubble">children</Tag>
         </header>
       </div>
     );
